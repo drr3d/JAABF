@@ -119,5 +119,5 @@ sedangkan responses pada `action` tidak akan dilakukan proses slot filling
 Notes
 ===
 
-<img src="https://github.com/drr3d/JAABF/blob/assets/result-1.PNG" width="425"/> <img src="https://github.com/drr3d/JAABF/blob/assets/result-2.PNG" width="425"/> 
+<img src="https://github.com/drr3d/JAABF/blob/assets/result-2.PNG" width="425"/> <img src="https://github.com/drr3d/JAABF/blob/assets/result-2_1.PNG" width="425"/> 
 ___
