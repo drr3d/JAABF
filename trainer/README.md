@@ -1,1 +1,0 @@
-This folder is for python model trainer file
