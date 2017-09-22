@@ -1,4 +1,4 @@
-[![AUR](https://img.shields.io/aur/license/yaourt.svg)(https://github.com/drr3d/JAABF/tree/master)]() [![Join the chat at https://gitter.im/drr3d](https://github.com/drr3d/JAABF/tree/master)(https://img.shields.io/gitter/room/nwjs/nw.js.svg)]()
+[![AUR](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/drr3d/JAABF/tree/master) [![Join the chat at https://gitter.im/drr3d](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/drr3d)
 
 JAABF
 ===
