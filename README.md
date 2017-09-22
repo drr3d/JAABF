@@ -23,14 +23,13 @@ Flow and Set-Up
 ===
 ## Basic Bot Flow
 
-<img src="https://github.com/drr3d/JAABF/blob/assets/basic-flow.PNG" width="800" height="350" align="middle/>
+<img src="https://github.com/drr3d/JAABF/blob/assets/basic-flow.PNG" width="800" height="350" align="middle"/>
 
 
 ## First time BOT Set-Up
 
-1. Prepare conversation settings, and place under:
-	``` settings/conversation ```
-
+1. Prepare conversation settings, and place under: ``` settings/conversation ```.
+2. Prepare Entity settings, and place under: ``` settings/conversation ```.
 ___
 
 ## How To Run
