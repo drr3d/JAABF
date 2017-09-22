@@ -19,16 +19,31 @@ Code is still very messed up, i still working hard and need all your help guys, 
 > * Scikit Learn
 ___
 
+Flow and Set-Up
+===
+## Basic Bot Flow
+
+<img src="https://github.com/drr3d/JAABF/blob/assets/basic-flow.PNG" width="425"/>
+
+
+## First time BOT Set-Up
+
+1. Prepare conversation settings, and place under:
+	``` settings/conversation ```
+
+___
+
 ## How To Run
 
 just execute `python __init__.py` to run the server
 
 ___
 
-## A.P.I Resource
-
-SentenceSelection
+A.P.I Resource
 ===
+
+## SentenceSelection
+
 
 `ccurl -i -H "Content-Type: application/json" -X POST -d '{"sentence":"mau beli tiket pesawat ke Bandung", "method":"hmm"}' http://127.0.0.1:5000/api/selection`
 
@@ -119,5 +134,21 @@ sedangkan responses pada `action` tidak akan dilakukan proses slot filling
 Notes
 ===
 
+## Things can not be forgotten
+
+- Classifier
+- Named Entity Recognizer
+
+
+## Example result:
+
+A.P.I would return JSON result.
+
 <img src="https://github.com/drr3d/JAABF/blob/assets/result-2.PNG" width="425"/> <img src="https://github.com/drr3d/JAABF/blob/assets/result-2_1.PNG" width="425"/> 
 ___
+
+
+License
+===
+
+This project is licensed under the GPL-3.0 License - see the LICENSE.md file for details
