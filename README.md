@@ -21,9 +21,12 @@ ___
 
 Flow and Set-Up
 ===
+
 ## Basic Bot Flow
 
-<img src="https://github.com/drr3d/JAABF/blob/assets/basic-flow.PNG" width="650" height="275" align="center"/>
+<p align="center">
+<img src="https://github.com/drr3d/JAABF/blob/assets/basic-flow.PNG" width="650" height="275"/>
+</p>
 
 ## First time BOT Set-Up
 
