@@ -1,4 +1,4 @@
-[![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
+[![AUR](https://img.shields.io/aur/license/yaourt.svg)]() [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)]()
 
 JAABF
 ===
