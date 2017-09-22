@@ -1,7 +1,9 @@
+[![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
+
 JAABF
 ===
 
-Stands for Just Another Anoying chat Bot Framework
+Stands for **Just Another Anoying Chatbot Framework** build on **Python**.
 
 Chatbot framework ini menggunakan mekanisme Intent-Action, dimana setiap hasil klasifikasi Intent yang diperoleh akan dipasangkan dengan Action tertentu.
 
