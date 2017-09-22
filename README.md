@@ -23,8 +23,7 @@ Flow and Set-Up
 ===
 ## Basic Bot Flow
 
-<img src="https://github.com/drr3d/JAABF/blob/assets/basic-flow.PNG" width="800" height="350" align="middle"/>
-
+<img src="https://github.com/drr3d/JAABF/blob/assets/basic-flow.PNG" width="650" height="2750" align="center"/>
 
 ## First time BOT Set-Up
 
@@ -55,11 +54,10 @@ A.P.I Resource
 ___
 
 
-## JSON Settings Explained:
-
-entity_list.json
+JSON Settings Explained:
 ===
 
+## entity_list.json
 Berisi setting untuk entitas, bisa dianggap ini bagian dari NER (Named Entity Recognition)
 
 	{
@@ -82,8 +80,7 @@ Berisi setting untuk entitas, bisa dianggap ini bagian dari NER (Named Entity Re
 	}
 
 
-intent_classifier.json
-===
+## intent_classifier.json
 
 {TIME} slot pada contoh key `responses` di bawah akan di replace berdasar user input detected Entity yang terkain dengan entity_list.json
 
