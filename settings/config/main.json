@@ -1,0 +1,9 @@
+{
+    "bot_name":"N.I.R.I.N.A",
+    "bot_version:":"1.0.0",
+    "run":{
+        "ntc":["INTENT","LOC","TIME","PERSON","NP","UNIT","DATE","ORG","CITY"],
+        "intent_jsonfile":"simple_intent_classifier.json",
+        "entity_jsonfile":"entity_list.json"
+    }
+}

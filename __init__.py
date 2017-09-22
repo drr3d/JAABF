@@ -6,7 +6,7 @@ Flask-RESTful extension."""
 import os, sys
 if os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..')) not in sys.path:
     sys.path.append(os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..')))
-print sys.path
+
 from flask import Flask, jsonify, abort, Response
 from flask.ext.restful import Api, Resource, reqparse, fields, marshal
 
@@ -23,6 +23,7 @@ hmm_dataset_path = '/dataset/'
 print "using hmm root path:",hmm_root_path
 hmm_tagger = HMMTag(hmm_root_path+hmm_dataset_path,'hmmtag_trained_file')
 ###
+###############################
 
 app = Flask(__name__, static_url_path="")
 app.config['DEBUG'] = True

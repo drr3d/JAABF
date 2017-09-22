@@ -167,7 +167,7 @@ class SentenceClassifier(ACTION):
         confidencescore = 0.
         
         def loadIntentClassifier(jsondir, jsonfile):
-            output_json = json.load(open(jsondir + jsonfile))
+            output_json = json.load(open(jsondir + jsonfile,'r'))
             return output_json
 
         if self.json_dir and self.json_file:

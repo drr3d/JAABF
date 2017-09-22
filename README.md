@@ -32,6 +32,7 @@ Flow and Set-Up
 
 1. Prepare conversation settings, and place under: ``` settings/conversation ```.
 2. Prepare Entity settings, and place under: ``` settings/conversation ```.
+3. Set up ``` settings/config/main.json ``` based on your own preferences and settings.
 ___
 
 ## How To Run
@@ -61,7 +62,8 @@ JSON Settings Explained:
 ===
 
 ## entity_list.json
-Berisi setting untuk entitas, bisa dianggap ini bagian dari NER (Named Entity Recognition)
+
+Berisi setting untuk entitas, bisa dianggap ini bagian dari NER (Named Entity Recognition), Used for **simple slot filling** mechanism.
 
 	{
     	"time":{
@@ -85,7 +87,7 @@ Berisi setting untuk entitas, bisa dianggap ini bagian dari NER (Named Entity Re
 
 ## intent_classifier.json
 
-{TIME} slot pada contoh key `responses` di bawah akan di replace berdasar user input detected Entity yang terkain dengan entity_list.json
+{TIME} slot pada contoh key `responses` di bawah akan di replace berdasar user input detected Entity yang terkain dengan **entity_list.json**.
 
 slot yang akan direplace hanya ada pada `responses` default direct action dari `intent classifier`, 
 sedangkan responses pada `action` tidak akan dilakukan proses slot filling
@@ -136,7 +138,11 @@ Notes
 ## Things can not be forgotten
 
 - Classifier
+	- used for classify user utterance.
 - Named Entity Recognizer
+	- Used for detecting Intent.
+	- Available method for this version:
+		- HMM (using NLTK)
 
 
 ## Example result:
