@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+# Authors: Aulia Normansyah(aulia.normansyah@pantaw.com)
+#
+# License: GPL 3.
 from __future__ import print_function
 
 from sklearn.base import BaseEstimator, ClassifierMixin
@@ -25,7 +29,7 @@ def classAttribute(func):
         return func(*args, **kwargs)
     return decorated
 
-class YbEstimator(BaseEstimator, ClassifierMixin):
+class JAABFEstimator(BaseEstimator, ClassifierMixin):
     def __init__(self,
                     preprocessing=None,
                     vectorizer=None,

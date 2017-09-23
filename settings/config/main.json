@@ -5,5 +5,15 @@
         "ntc":["INTENT","LOC","TIME","PERSON","NP","UNIT","DATE","ORG","CITY"],
         "intent_jsonfile":"simple_intent_classifier.json",
         "entity_jsonfile":"entity_list.json"
+    },
+    "classifier":{
+        "provider":"sklearn",
+        "method":"multinb"
+    },
+    "ner":{
+        "provider":"nltk",
+        "method":"hmm",
+        "trained_filename":"hmmtag_trained_file",
+        "trained_fileloc":"/dataset/"
     }
 }

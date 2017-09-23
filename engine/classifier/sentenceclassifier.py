@@ -28,7 +28,7 @@ def intentReqParamLoader(param, ENT_JSONFILE):
     #   tidak sama dengan key di `entity_list`
     return json_datas[param]['value'], json_datas[param]['type']
 
-def fit(sentence, dataset_folder=None, json_data=None, json_ent = None, verbose=False):
+def fit(sentence, method, dataset_folder=None, json_data=None, json_ent = None, verbose=False):
     if dataset_folder:
         train_dir = dataset_folder + 'classifier/'
     
@@ -111,9 +111,10 @@ def fit(sentence, dataset_folder=None, json_data=None, json_ent = None, verbose=
             print "\n"
 
     ######################## Begin Training to Classifying Data ########################
-    model=IntentClassifier(solver_algo='linsvc')
+    print "solvin intent using classfier:",method
+    model=IntentClassifier(solver_algo=method)
 
-    models=model.train(train_data, train_labels, max_df=1.0, minword=1)#, multi_class='multinomial', solver='newton-cg')
+    models=model.train(train_data, train_labels, max_df=1.0, minword=1)
     predicted_label = [models.predict(test_data)[0]]
 
     from operator import itemgetter
@@ -128,12 +129,13 @@ def fit(sentence, dataset_folder=None, json_data=None, json_ent = None, verbose=
     
 
 class SentenceClassifier(ACTION):
-    def __init__(self, dataset_folder=None, json_dir=None, json_file=None, json_ent_file=None):
+    def __init__(self, method, dataset_folder=None, json_dir=None, json_file=None, json_ent_file=None):
         ACTION.__init__(self,dataset_folder, json_dir, json_file)
 
         self.dataset_folder = dataset_folder
         self.json_dir = json_dir
         self.json_file = json_file
+        self.clasf_method = method
 
         ## Per 23 Agustus 2016, `json_ent_file` juga ditambahkan ke dalam dictvocab
         ##      untuk komparasi deteksi NONE type class
@@ -187,7 +189,7 @@ class SentenceClassifier(ACTION):
                 label = ['NONE'], []
             else:
                 if len(sent.strip()) > 0:
-                    label = fit(sent, dataset_folder=dataset_dir, \
+                    label = fit(sent, self.clasf_method, dataset_folder=dataset_dir, \
                                 json_data = json_datas, \
                                 json_ent = self.json_dir+self.json_ent_file , \
                                 verbose=False)

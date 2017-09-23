@@ -1,7 +1,11 @@
+# -*- coding: utf-8 -*-
+# Authors: Aulia Normansyah(aulia.normansyah@pantaw.com)
+#
+# License: GPL 3.
 from __future__ import print_function
 
 from constructors import *
-from estimator import YbEstimator
+from estimator import JAABFEstimator
 
 class IntentClassifier():
     def __init__(self, validation_split=None, solver_algo=None, stopword=None):
@@ -43,11 +47,12 @@ class IntentClassifier():
              y_train = y
 
         algo = self.solver_algo(**algoparam)
-        model = YbEstimator(vectorizer=self._tf_vectorizer, transformer=self._tf_transformer, classifier=algo)
+        model = JAABFEstimator(vectorizer=self._tf_vectorizer, \
+                            transformer=self._tf_transformer, classifier=algo)
         
         return model.fit(X_train,y_train)
     
     def load(self, name, load_dir=None):
-        model = YbEstimator()
+        model = JAABFEstimator()
         return model.loadModel(name=name, load_dir=load_dir)
 

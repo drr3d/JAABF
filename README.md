@@ -1,4 +1,4 @@
-[![AUR](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/drr3d/JAABF/tree/master) [![Join the chat at https://gitter.im/drr3d](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/drr3d)
+[![AUR](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/drr3d/JAABF#license) [![Join the chat at https://gitter.im/drr3d](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/JAABF-chatbot)
 
 JAABF
 ===
@@ -32,9 +32,11 @@ Flow and Set-Up
 
 ## First time BOT Set-Up
 
-1. Prepare conversation settings, and place under: ``` settings/conversation ```.
-2. Prepare Entity settings, and place under: ``` settings/conversation ```.
-3. Set up ``` settings/config/main.json ``` based on your own preferences and settings.
+1. Place source under directory ``` /bot ```, create one if you did not have.
+2. Prepare conversation settings, and place under: ``` settings/conversation ```.
+3. Prepare Entity settings, and place under: ``` settings/conversation ```.
+4. Set up ``` settings/config/main.json ``` based on your own preferences and settings.
+
 ___
 
 ## How To Run
@@ -141,10 +143,18 @@ Notes
 
 - Classifier
 	- used for classify user utterance.
+	- Available name:method-(provider) for this version:
+		- 'sgd':sgd -(sklearn)
+		- 'logr':logisticRegresion -(sklearn)
+		- 'rndf':randomForest -(sklearn)
+        - 'linsvc':liblinearSVC -(sklearn)
+		- 'multinb':multinomialNB -(sklearn)
+        - 'dectree':decisionTree -(sklearn)
+		- 'adaboost':adaBoost -(sklearn)
 - Named Entity Recognizer
 	- Used for detecting Intent.
-	- Available method for this version:
-		- HMM (using NLTK)
+	- Available method-(provider) for this version:
+		- HMM -(NLTK)
 
 
 ## Example result:
