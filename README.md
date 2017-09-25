@@ -3,6 +3,8 @@
 JAABF
 ===
 
+[![Join the chat at https://gitter.im/JAABF-chatbot/Lobby](https://badges.gitter.im/JAABF-chatbot/Lobby.svg)](https://gitter.im/JAABF-chatbot/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Stands for **Just Another Anoying Chatbot Framework** build on **Python**.
 
 Chatbot framework ini menggunakan mekanisme Intent-Action, dimana setiap hasil klasifikasi Intent yang diperoleh akan dipasangkan dengan Action tertentu.
